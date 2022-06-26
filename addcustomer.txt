@@ -21,15 +21,16 @@
 
 
 ''*****************************************
-'SCRIPT
+''SCRIPT
 
-''Test cases for phase 1
 
-''Valid input
-AddUser "dsmith", "password", "Peter", "Smith", "ABC", "416-456-0000", "jsmith@sample.com"
+"Test Cases for phase 1
 
-''Invalid input - missing Username
-AddUser "", "password", "Ron", "Smith", "ABC", "416-456-0000", "rsmith@sample.com"
+"Valid input
+AddCustomer "Mr.', "Ben", "Bean", "24 Bow Ave", "Brownsville", "ON", "B8N 0M8"
 
-''Invalid input - missing password
-AddUser "rnmith", "", "Ron", "Smith", "ABC", "416-456-0000", "rsmith@sample.com"
+ Invalid input - missing first name
+AddCustomer " Mrs.", "", "Pink", "34 Purple Street", "Pondsville", "SK", "S9M 2Y3"
+
+ Invalid input - missing last name
+AddCustomer " Mrs.", "Paula", "", "34 Purple Street", "Pondsville", "SK", "S9M 2Y3"
