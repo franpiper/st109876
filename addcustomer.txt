@@ -24,13 +24,15 @@
 ''SCRIPT
 
 
-"Test Cases for phase 1
 
-"Valid input
+
+
 AddCustomer "Mr.', "Ben", "Bean", "24 Bow Ave", "Brownsville", "ON", "B8N 0M8"
 
- Invalid input - missing first name
-AddCustomer " Mrs.", "", "Pink", "34 Purple Street", "Pondsville", "SK", "S9M 2Y3"
+AddCustomer " Mrs.", "Penny", "Pink", "34 Purple Street", "Pondsville", "SK", "S9M 2Y3"
 
- Invalid input - missing last name
-AddCustomer " Mrs.", "Paula", "", "34 Purple Street", "Pondsville", "SK", "S9M 2Y3"
+AddCustomer " Mrs.", "Paula", "Bird", "34 Purple Street", "Pondsville", "SK", "S9M 2Y3"
+
+AddCustomer "Dr.", "Henny", "Penny", "12 Rooster rd", "Farmville", "AB", "A1C 2B7"
+
+AddCustomer"Dr.", "Wendy", "Way", "9th Street", "Downtown", "BC", "B1S 8N6"
